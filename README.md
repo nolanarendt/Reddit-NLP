@@ -37,13 +37,13 @@ Notebooks (In Order)
 ## Summary of Analysis
 From the data that was pulled, and after the creation of visualizations, there seemed to be a noticeable difference between the words that were used by Teenagers versus Adults. It seems that teenagers seemed to talk a lot about relationships, school, love, etc. When analyzing the most common words for adults, we see that they talk most about stress factors, such as work, rent, money, apartments, etc. This is a prediction that I had going in because most of the most occuring words in the adults subreddit were things that teenagers did not have to worry about, as most teenagers are supported by their families until they are adults.
 
-![Teenager Common Words](https://git.generalassemb.ly/nolanarendt/Submissions/blob/main/Projects/project_3-master/images/teenagers_common_words.png)
+![Teenager Common Words](https://github.com/nolanarendt/Reddit-NLP/blob/main/images/teenagers_common_words.png)
 
-![Adult Common Words](https://git.generalassemb.ly/nolanarendt/Submissions/blob/main/Projects/project_3-master/images/adults_common_words.png)
+![Adult Common Words](https://github.com/nolanarendt/Reddit-NLP/blob/main/images/adults_common_words.png)
 
 Based off of the data that I collected from subreddits Teenagers and Adulting, my best performing model had a 0.947 Training Score and a 0.925 Testing Score. Reflecting on these scores, I believe that my model was successful in accurately predicting what subreddit a post was from by analyzing the words that were used. When looking at misclassifications, I saw that we had a specificity score of 92.9%, and only 139 misclassifications. Of the words that were misclassified, it was clear that they are common words that are relevant no matter what age you are, so this is explainable.
 
-![Misclassifications](https://git.generalassemb.ly/nolanarendt/Submissions/blob/main/Projects/project_3-master/images/misclassified_naivebayes.png)
+![Misclassifications](https://github.com/nolanarendt/Reddit-NLP/blob/main/images/misclassified_words.png)
 
 ## Conclusion & Recommendations 
 I believe that this model would be very effective for any marketing company that is looking to target users on a social media platform such as reddit. Through the use of my model, a company would be able to identify which users are teenagers, and advertise the most popular items that teenagers like. Likewise, a company would be able to identify adults, and market more adult specific items. Most adults also have an income, therefore, they would be more likely to spend money on a given item. I would recommend using a Naive Bayes model with a TfidfVectorizer to accurately predict what subreddit a post is from. Removing features, gathering more data, and feature engineering could possibly reduce overfitting.
